@@ -197,8 +197,7 @@ Contributions are welcome! Please feel free to submit issues and pull requests.
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Author
-
-Isak (SA7BNB)
+Anders Isaksson (SA7BNB)
 
 ## Acknowledgments
 
