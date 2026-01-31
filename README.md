@@ -2,10 +2,13 @@
 
 A Python-based GUI tool for scanning networks to identify devices with open Telnet ports (port 23) and testing for autologin vulnerabilities.
 
+![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)
+![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-lightgrey.svg)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
 
 ## Background: CVE-2026-24061
-On January 20, 2026, security researcher Kyu Neushwaistein discovered a critical vulnerability (CVE-2026-24061) in GNU InetUtils telnetd that had been hiding in plain sight for **nearly 11 years**. 
-The bug was introduced in May 2015 and affects versions 1.9.3 through 2.7.
+
+On January 20, 2026, security researcher Kyu Neushwaistein discovered a critical vulnerability (CVE-2026-24061) in GNU InetUtils telnetd that had been hiding in plain sight for **nearly 11 years**. The bug was introduced in May 2015 and affects versions 1.9.3 through 2.7.
 
 ### Why This Matters Now
 
@@ -46,28 +49,7 @@ This tool helps network administrators and security professionals identify vulne
 
 ## Screenshot
 
-```
-┌─────────────────────────────────────────────────────────┐
-│         Telnet Security Scanner - Port 23              │
-├─────────────────────────────────────────────────────────┤
-│  IP Range                                               │
-│  Start IP: [192.168.1.1  ]  End IP: [192.168.1.254  ]  │
-├─────────────────────────────────────────────────────────┤
-│  Settings                                               │
-│  Log file: [/path/to/log.txt            ] [Browse...]  │
-│  Port: [23]  Threads: [50]  Timeout: [2.0]             │
-├─────────────────────────────────────────────────────────┤
-│  [▶ Start Scan]  [⬛ Stop]  [🗑 Clear Log]              │
-├─────────────────────────────────────────────────────────┤
-│  ████████████████████░░░░░░░░░░  67%                   │
-│  Scanned: 170/254 | Open ports: 3 | Vulnerable: 1      │
-├─────────────────────────────────────────────────────────┤
-│  Scan Log                                               │
-│  [12:34:56] Starting scan of 254 IP addresses...       │
-│  [12:34:57] [+] 192.168.1.45:23 OPEN - testing...      │
-│  [12:34:58] [!] 192.168.1.45 VULNERABLE!               │
-└─────────────────────────────────────────────────────────┘
-```
+![PortScanner GUI](https://github.com/sa7bnb/Telnet-Security-Scanner-Port-23/blob/main/PortScanner_picture.png?raw=true)
 
 ## Requirements
 
@@ -95,7 +77,7 @@ sudo apt install telnet
 
 For Windows users, a pre-built executable is available:
 
-1. Download `PortScanner.exe` from the [Releases](https://github.com/yourusername/telnet-scanner/releases) page
+1. Download `PortScanner.exe` from the [Releases](https://github.com/sa7bnb/Telnet-Security-Scanner-Port-23/releases) page
 2. Run the executable – no Python installation required
 
 > **Note:** Windows Defender or other antivirus software may flag the executable. This is a false positive due to the network scanning functionality. You may need to add an exception.
@@ -104,7 +86,7 @@ For Windows users, a pre-built executable is available:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/telnet-scanner.git
+git clone https://github.com/sa7bnb/Telnet-Security-Scanner-Port-23.git
 cd telnet-scanner
 
 # Make executable (optional)
